@@ -1,0 +1,109 @@
+CategoryID: "ID-HERE" #Category ID, this is where the modmails will be creatd
+AcceptEmoji: 👍 #Unicode Emoji \:standardemoji: in Discord to get Unicde
+RejectEmoji: 👎
+GuildID: "ID-HERE" #Your Guild/Server ID
+LogsChannelID: "ID-HERE" #Creation and deleting is logged
+
+Command: modmail #-modmail
+CommandDesc: Manage modmails #Command-Desc for Help Embed
+CloseCommand: close #-modmail close
+PromoteCommand: promote #-modmail promote can promote and demote
+PriorityCommand: priority #-modmail priority
+PingDepartmentOnCreate: true #This will Ping the Department Role on creation.
+
+PermissionRole: Staff #The Role which can run the commands.
+SupportRole: Staff #The Role which will be able 2 see the modmails without departments.
+UseDepartments: true #If true, Departments can be used, set to false if u dont wanna use Departments
+
+Departments: #Department Info
+  Department1:
+    Emoji: 1️⃣ #Emoji to React to, on DM
+    RoleID: "ID-HERE" #Department Role ID
+    Name: "Dep 1" #Department Name will be displayed inside department choose embed and used to promote
+  Department2:
+    Emoji: 2️⃣
+    RoleID: "ID-HERE"
+    Name: "Dep 2"
+  Department3:
+    Emoji: 3️⃣
+    RoleID: "ID-HERE"
+    Name: "Dep 3"
+
+Priority: #Priority Names for Priority Command will be shown in the Channel Topic
+  PriorityLow: Low
+  PriorityMid: Mid
+  PriorityHigh: High
+
+Embeds:
+  Start: #Embed which will be send after DM
+    Title: Support
+    Desc: Are you sure you would like to send **%MESSAGE%** to our Team?
+    Color: BLUE
+
+  MessageSended: #Embed => via DM when ur Message is sent to the Modmail
+    Title: Support
+    Desc: Your message **%MESSAGE%** has been sent.
+    Color: BLUE
+
+  LogsEmbed: #Logs Embed => logschannel
+    Title: New Modmail
+    Desc: "%AUTHOR% has created a new Modmail %MAILCHANNEL%"
+    Color: BLUE
+
+  MailEmbed: #The Embed inside the Modmail
+    Title: Support
+    Color: Blue
+
+  AnswerEmbed: #Answer Embed => Answer in Modmail this Embed goes to the creator
+    Title: Support
+    Color: BLUE
+
+  Department: #Department Embed => after sending a message via dm and accepting the sending it will ask for department, only if the author hasnt a modmail opened
+    Title: Choose a department
+    Color: BLUE
+
+    Department1:
+      name: React with %EMOJI% # %EMOJI% = Placeholder for Departments.Department1.Emoji
+      value: to contact our %DEP1ROLE% Team # %DEP1ROLE% = Placeholder for Departments.Department1.Name
+
+    Department2:
+      name: React with %EMOJI% # %EMOJI% = Placeholder for Departments.Department2.Emoji
+      value: to contact our %DEP2ROLE% Team # %DEP2ROLE% = Placeholder for Departments.Department2.Name
+
+    Department3:
+      name: React with %EMOJI% # %EMOJI% = Placeholder for Departments.Department3.Emoji
+      value: to contact our %DEP3ROLE% Team # %DEP3OLE% = Placeholder for Departments.Department3.Name
+
+  Declined: #If u decline the modmail.
+    Title: Support
+    Desc: You have successfully declined sending the message **%MESSAGE%** #%MESSAGE% = Placeholder for message content
+    Color: RED
+
+  Commands:
+    PromoteCommand:
+      Title: Promote
+      Desc: "%DEP1ROLE% %DEP2ROLE% %DEP3ROLE% are valid options" #%DEP1ROLE% %DEP2ROLE% %DEP3ROLE% = placeholder for the Department Names
+      Color: BLUE
+      Promoted: Promoted #When successfuly promoted a modmail
+      PromotedColor: "0x0099ff" #color must be hex code
+
+    PriorityCommand:
+      Title: Priority
+      Desc: "%PRIO1% %PRIO2% %PRIO3% are valid options" #%PRIO1% %PRIO2% %PRIO3% = placeholder for Priority Names
+      Color: BLUE
+      PriorityChanged: Changed Priority #When successfully changed priority
+      PriorityChangedColor: "#0x0099ff" #Here the color must be hex-code
+
+    Delete:
+      Channel:
+        Title: Deleting Modmail #this will be sent inside the modmail
+        Desc: I am now deleting the Modmail
+        Color: RED
+      User:
+        Title: Support # This will be sent to the creator
+        Desc: Your ticket is now being closed. Thank you for reaching out to us!
+        Color: RED
+      Logs:
+        Title: Modmail deleted #this will be sent to the logschannel
+        Desc: "%USER%'s modmail has been deleted." #%USER% = placeholder for creator
+        Color: RED

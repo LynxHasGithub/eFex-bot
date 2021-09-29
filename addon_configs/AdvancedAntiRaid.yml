@@ -1,0 +1,154 @@
+# PUNISHMENT SYSTEM
+# Action: <type>
+# Supported types are ban, warn, kick
+IgnoreBots: false
+BypassPermissions:
+  - ADMINISTRATOR
+# THESE ARE DISCORD PERMISSIONS NOT ROLES.
+# DO NOT TOUCH IF YOU DONT KNOW WHAT YOUR DOING.
+IgnoredRoles:
+  - RoleId1
+  - RoleId2
+IgnoredUsers:
+  - UserId1
+  - UserId2
+IgnoredChannels:
+  - ChannelId1
+  - ChannelId2
+AutoLockChannel: 40
+DisableXpOnRaid: true
+# This will disable the xp module temporarily while a raid is being executed.
+# Best to leave this enabled for the best preformance.
+AntiSpam:
+  Enabled: true
+  MaxDuplicatesInterval: 1000
+  # How fast do duplicate messages have to be sent
+  MaxInterval: 1000
+  # How fast can users send messages
+  DuplicateThreshold: 3
+  # How many duplicate messages have to be sent in the MaxDuplicatesInterval
+  SpamThreshold: 4
+  # How many messages have to be sent in MaxInterval
+  Action:
+    Enabled: true
+    Type: warn
+    Reason: spamming
+CaptchaVerification:
+  Enabled: false
+  Type: command
+  # Reaction/Command/Both
+  Size: 8
+  VerificationChannel: "888404341705277492"
+  ReactionMessage:
+    MessagId: "888408891308781588"
+    Emoji: ⚠️
+AntiMassMention:
+  Enabled: true
+  MaxMentions: 3
+  DeleteMessage: true
+  Action:
+    Enabled: true
+    Type: warn
+    Reason: Mention Spam
+AntiNicknameCharacterSpam:
+  Enabled: true
+  DefaultNick: User-{discrim}
+  NotifyUser: true
+  Whitelist: 🎃
+  Action:
+    Enabled: false
+    Type: warn
+    Reason: Invalid Nickname Characters
+AntiSpamCharacters:
+  Enabled: true
+  DeleteMessage: true
+  NotifyUser: true
+  Whitelist: 🎃
+  Action:
+    Enabled: true
+    Type: warn
+    Reason: "Invalid Message Charachers: **{ivalidCharacters}**"
+AccountAgeChecker:
+  Enabled: true
+  MinimumAge: 24
+  # How old a account must be in hours.
+  Action:
+    Enabled: true
+    Type: kick
+    Reason: "Invalid Account Age. Age: {age}"
+AntiSelfBot:
+  Enabled: true
+  Action:
+    Enabled: true
+    Type: ban
+    Reason: Selfbot
+AntiEmojiSpam:
+  Enabled: true
+  MaxEmojis: 8
+  Action:
+    Enabled: true
+    Type: warn
+    Reason: Emoji Spam
+Embeds:
+  InvalidNickname:
+    Title: ⚠️ WARNING ⚠️
+    Description: Your nickname cannot contain any non-english characters.
+  EnglishCharactersOnly:
+    Title: ⚠️ WARNING ⚠️
+    Description: You cannot use non-english characters in this server!
+  NotifyStaffForSelfbot:
+    Title: ⚠️ WARNING ⚠️
+    Description: The user {user-mention} ({user-id}) may be using a selfbot.
+  TooManyMentions:
+    Title: ⚠️ WARNING ⚠️
+    Description: Your mention contains too many mentions!
+  BannedUsers:
+    Title: Banned users
+    Description: |-
+      In the last 30 seconds I banned the following users: 
+      {users}
+  KickedUsers:
+    Title: Kicked users
+    Description: |-
+      In the last 30 seconds I kicked the following users: 
+      {users}
+  WarnedUsers:
+    Title: Warned users
+    Description: |-
+      In the last 30 seconds I Warned the following users: 
+      {users}
+  TooManyEmojis:
+    Title: ⚠️ WARNING ⚠️
+    Description: Your message contains too many emojis!
+  AlreadyHaveCaptcha:
+    Title: ⚠️ WARNING ⚠️
+    Description: You already have a captcha that needs to be completed. Check your
+      dms with me.
+  Captcha:
+    Author: Verification Code
+    AuthorIcon: https://media.discordapp.net/attachments/734234161266556930/788578166901047306/PinClipart.com_clip-art-church-buildings_2092535.png
+    Description: >-
+      Welcome {user-mention} to **{guild-name}**. In order to gain access to the
+      rest of the guild you will need to verify that you are not a robot. 🤖
+
+       ⚠️ **Note:** *Please note the captcha is Case-Sensitive.*
+    Color: "#0390fc"
+  Welcome:
+    Author: Welcome To {guild-name}
+    AuthorIcon: https://cdn.discordapp.com/attachments/734234161266556930/788578166901047306/PinClipart.com_clip-art-church-buildings_2092535.png
+    Description: |-
+      Welcome {user-mention} to {guild-name}.
+      Before accessing and utilizing resources in the discord 
+      please make sure to follow our <#678335857761189961>.
+    timestamp: true
+AntiRoleMention :
+    Enabled: true
+    MaxMentions: 2
+    Action:
+     Reason: Mentioning Everyone
+     Enabled: true
+     Type : warn
+     
+    
+    
+  

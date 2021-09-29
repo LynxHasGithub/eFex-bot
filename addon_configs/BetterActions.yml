@@ -1,0 +1,340 @@
+RequiredChannels:
+  AllowedChannels:
+    Kiss:
+      - "870569238887301130"
+      - "870942297561370694"
+    Hug:
+      - "870569238887301130"
+      - "870942297561370694"
+    Pat:
+      - "870569238887301130"
+      - "870942297561370694"
+    Tickle:
+      - "870569238887301130"
+      - "870942297561370694"
+    Slap:
+      - "870569238887301130"
+      - "870942297561370694"
+    Cuddle:
+      - "870569238887301130"
+      - "870942297561370694"
+    Feed:
+      - "870569238887301130"
+      - "870942297561370694"
+    Bite:
+      - "870569238887301130"
+      - "870942297561370694"
+    Highfive:
+      - "870569238887301130"
+      - "870942297561370694"
+    Wave:
+      - "870569238887301130"
+      - "870942297561370694"
+    Lick:
+      - "870569238887301130"
+      - "870942297561370694"
+    Bully:
+      - "870569238887301130"
+      - "870942297561370694"
+    Kill:
+      - "870569238887301130"
+      - "870942297561370694"
+    Boop:
+      - "870569238887301130"
+      - "870942297561370694"
+  WrongChannel:
+    Description: "**Wrong channel please write this command in** {Channels}"
+# Kiss command
+KissCommand: kiss
+KissDescription: Kiss someone
+KissUsage: "`kiss <@user>`"
+KissEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't kiss themselve**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Kiss:
+    Description: "**{author} kissed {kissed}**"
+    Image: "{kissgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+KissRoleRequire: "@everyone"
+# Hug command
+HugCommand: hug
+HugDescription: hug someone or themselve
+HugUsage: "`hug <@user>`"
+HugEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} is hugging themselves...**"
+    Image: "{huggif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Hug:
+    Description: "**{hugged} is getting hugged by {author}**"
+    Image: "{huggif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+HugRoleRequire: "@everyone"
+# Pat command
+PatCommand: pat
+PatDescription: pat someone
+PatUsage: "`pat <@user>`"
+PatEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't pat themselve**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Pat:
+    Description: "**{author} is patting {pat}**"
+    Image: "{patgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+PatRoleRequire: "@everyone"
+# Tickle command
+TickleCommand: tickle
+TickleDescription: tickle someone
+TickleUsage: "`tickle <@user>`"
+TickleEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't tickle themselve**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Tickle:
+    Description: "**{author} is tickling {tickle}**"
+    Image: "{ticklegif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+TickleRoleRequire: "@everyone"
+# Slap command
+SlapCommand: slap
+SlapDescription: slap someone or yourself
+SlapUsage: "`slap <@user>`"
+SlapEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} is slapping themselves**"
+    Image: "{slapmyselfgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Slap:
+    Description: "**{author} is slapping {slap}**"
+    Image: "{slapgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+SlapRoleRequire: "@everyone"
+# Cuddle command
+CuddleCommand: cuddle
+CuddleDescription: Cuddle someone
+CuddleUsage: "'`cuddle <@user>`'"
+CuddleEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't cuddle themeselves**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Cuddle:
+    Description: "**{author} is embracing {cuddle} to cuddle**"
+    Image: "{cuddlegif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+CuddleRoleRequire: "@everyone"
+# Feed command
+FeedCommand: feed
+FeedDescription: Feed someone
+FeedUsage: "'`feed <@user>`'"
+FeedEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't feed yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Feed:
+    Description: "**{author} is feeding {feed}**"
+    Image: "{feedgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+FeedRoleRequire: "@everyone"
+# Bite command
+BiteCommand: bite
+BiteDescription: bite someone
+BiteUsage: "`bite <@user>`"
+BiteEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't bite yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Bite:
+    Description: "**{author} is biting {bite}**"
+    Image: "{bitegif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+BiteRoleRequire: "@everyone"
+# Highfive Command
+HighfiveCommand: highfive
+HighfiveDescription: have highfive with someone
+HighfiveUsage: "`highfive <@user>`"
+HighfiveAliases:
+  - hf
+  - highf
+HighfiveEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't do highfive with yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Highfive:
+    Description: "**{author} highfives with {highfive}**"
+    Image: "{highfivegif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+HighfiveRoleRequire: "@everyone"
+# wave Command
+WaveCommand: wave
+WaveDescription: Wave to someone
+WaveUsage: "`wave <@user>`"
+WaveEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} You can't wave to yourself **"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Wave:
+    Description: "**{author} waving at {wave}**"
+    Image: "{wavegif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+WaveRoleRequire: "@everyone"
+# lick Command
+LickCommand: lick
+LickDescription: lick someone
+LickUsage: "`wave <@user>`"
+LickEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't lick yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Lick:
+    Description: "**{author} is giving {lick} a lick**"
+    Image: "{lickgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+LickRoleRequire: "@everyone"
+# bully Command
+BullyCommand: bully
+BullyDescription: bully someone
+BullyUsage: "`bully <@user>`"
+BullyEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't bully yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Bully:
+    Description: "**{author} bullying a {bully}**"
+    Image: "{bullygif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+BullyRoleRequire: "@everyone"
+# kill Command
+KillCommand: kill
+KillDescription: kill someone or commit suicide
+KillUsage: "`kill <@user>`"
+KillEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} committed suicide **"
+    Image: "{killgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Kill:
+    Description: "**{author} is killing {kill}**"
+    Image: "{killgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+KillRoleRequire: "@everyone"
+# boop Command
+BoopCommand: boop
+BoopDescription: boop someone
+BoopUsage: "`boop <@user>`"
+BoopEmbeds:
+  NoMention:
+    Description: "**{author} You have to mention someone.**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Myself:
+    Description: "**{author} you can't boop yourself**"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+  Boop:
+    Description: "**{author} is booping {boop}**"
+    Image: "{boopgif}"
+    Footer: "Requested by: {Requestedby}"
+    FooterIcon: "{author-pfp}"
+BoopRoleRequire: "@everyone"
+# help Command
+HelpCommand: actions
+HelpDescription: Show actions help menu
+HelpUsage: "`actions`"
+HelpEmbed:
+  Title: Actions help menu
+  Description: |-
+    **-actions** - Show actions help menu
+    **-kiss** - kiss someone
+    **-hug** - hug someone or alone hug
+    **-pat** - pat someone
+    **-tickle** - tickle someone
+    **-slap** - slap someone or yourself
+    **-cuddle** - cuddle someone
+    **-feed** - feed someone
+    **-bite** - bite someone
+    **-highfive** - do higfive with someone
+    **-wave** - wave to someone
+    **-lick** - lick someone
+    **-bully** - bully someone
+    **-kill** - kill someone or commit suicide
+    **-boop** - boop someone
