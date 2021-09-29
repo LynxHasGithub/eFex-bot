@@ -13,3 +13,4 @@ This bot was made in the purpose to serve only the eFex server but its gonna get
 4 months - 3k members
 ---------------------
 7 months - 1k members
+---------------------
