@@ -1,0 +1,9 @@
+Port: 3000
+DefaultPage: sexy
+¬2: "Options: Sexy, Custom, [page name: example localhost:6000/verify = verify]"
+Custom: |-
+  <html>
+  <title>Codex Bot</title>
+          <h1>this is a placeholder page</h1>
+          </html>
+          

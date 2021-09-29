@@ -1,0 +1,57 @@
+Games:
+  CountingGame:
+    Enabled: true
+    Games:
+      "870532864616333332":
+        # This is your channelID. Make sure its is a STRING
+        AllowSpam: false
+        CustomDisplay: false
+        # Avaiable Modes are webhook/embed/false
+        ErrorMessages: true
+        RegExp: ^[0-9]*$
+        PinMessages:
+          - 10000
+        RoleRewards:
+          "10": Cool
+        MaxCount: 9999999999999999999999999999999999999
+        # Set this to a number if you want a max count
+        HardMode: false
+        # Should the counting game reset if someone says a wrong number.
+        Reaction: ✅
+        # Set this to false to disable reactions OR use a emoji ID for CustomEmojis
+Commands:
+  SetCount:
+    RequiredRole: admin
+    Command:
+      Name: setcount
+      Description: Set a counting game channel's count
+      Usage: setcount <channel> <count>
+      Aliases: []
+      type: management
+Embeds:
+  Errors:
+    CantSpam:
+      Title: You cant count after yourself!
+    InvalidCount:
+      Title: Invalid Count!
+      Description: The next number is ``{number}``!
+    InvalidCountHard:
+      Title: ❌ Uh Oh!
+      Description: "{user-mention} sent the wrong number ending the counting game at
+        **{count}**!"
+      Color: null
+    InvalidChannel:
+      Title: Invalid Channel
+      Description: The channel you mentioned is not a counting game channel. Please
+        create it in the config.
+  Success:
+    NewNumber:
+      Author: "{user_tag}"
+      AuthorIcon: "{user_pfp}"
+      Description: "{number}"
+    MaxCountReached:
+      Title: Congrats Everyone 🎉
+      Description: We reached the max count of {count}!
+    NewCount:
+      Title: Counting Game Updated
+      Description: The counting game <#{channel-id}> has been set to {count}

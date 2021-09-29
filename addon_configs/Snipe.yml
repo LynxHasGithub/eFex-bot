@@ -1,0 +1,16 @@
+Enabled: true
+Settings: {}
+Messages:
+  Sniped:
+    Author: "{target-tag}"
+    AuthorIcon: "{target-pfp}"
+    Description: "{content}"
+    Timestamp: true
+  No_Snipes:
+    Title: Nothing to snipe
+    Timestamp: true
+  History:
+    Title: Snipes [{currentPage}/{maxPage}]
+    Description: "{content}"
+    Footer: "{target-tag}"
+    FooterIcon: "{target-pfp}"

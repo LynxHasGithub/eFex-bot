@@ -1,0 +1,29 @@
+DeleteCommandMessage: "true"
+ThanksCooldown: 24h   #24h 12h h = hours #Cooldown per User
+DeleteTop10: "true"
+DeleteErrorEmbed: "true"
+DeleteSuccessEmbed: "true"
+DeleteHelpEmbed: "true"
+Commands:
+  ThanksCommand: thanks #alias thx
+  MyThanksCommand: mythanks #alias mythx
+  ThanksLeaderCommand: thanks10 #alias thx10
+CommandDesc:
+  ThanksCommandDesc: say thanks to a user
+  MyThanksCommandDesc: show your or a users current collected thanks
+  ThanksLeaderCommandDesc: Top 10 thanks
+Embeds:
+  Errors:
+    CooldownError: You have already thanked someone within the last %COOLDOWN%
+    CannotThankYourSelf: You cannot thank yourself
+    NoThanksLeaderbord: There are currently no thanks
+    NoThanksFromBot: Bots cannot say thanks
+  Top10:
+    Top10EmbedTitle: Top 10 Thanks
+    ThanksLeaderBoardField: has %THANKSAMOUNT% thanks
+  MyThanks:
+    MyThanksEmbedTitle: Current Thanks
+    MyThanksNoThanks: "%USER% has no thanks"
+    MyThanks: "%USER% currently have %THANKSAMOUNT% thanks"
+  Thanks:
+    Success: Added Thanks to %USER%

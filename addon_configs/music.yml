@@ -1,0 +1,73 @@
+YouTubeAPIKey: AIzaSyDL6HQu8KAI2u6O2Ritr870UJBOE0L5YdY
+PlayFirstResult: false
+Lang:
+  Errors:
+    NotInVoiceChannel: You must be in a voice channel to run this command.
+    NotPlayingMusic: The bot is currently not playing music.
+    CantSkip: You can not skip because the music queue only has one song.
+    NotPaused: The bot is already playing music.
+    AlreadyPlayingMusic: I am already playing music in another voice channel.
+    InvalidPermissions: I do not have the required permissions to join or speak in
+      this voice channel.
+    NotAllInfoObtained: Information for one of the songs requested could not be found.
+    NoSearchResults:
+      - No search results could be found for that search query
+      - Top 10 search results for `{search}` could not be found
+    InvalidPageNumber: That is not a valid page number!
+  Embeds:
+    NowPlaying:
+      Title: "🎶 Now playing:"
+      RequestBy: Requested By
+      Length: "Song Length: {length}"
+    AddedToQueue:
+      Song: "📜 Added to Queue:"
+      Playlist: "📜 Added Playlist to Queue:"
+      PlaylistLength: "{amount} songs in playlist"
+    Top10:
+      Title: Top Results
+      Description: >-
+        Displaying top search results for `{search}`. Select a video to add to
+        the queue by responding with it's corresponding number. 
+
+
+        {results}
+    Queue:
+      Title: "Music Queue (Page #{page})"
+      Description: "{queue}"
+      CurrentlyPlaying: |+
+        🎶 **Currently Playing:** [{song-name}]({song-url})
+
+    Pause:
+      Title: "⏸️ Paused song:"
+      Description: "{song-name}"
+    Resume:
+      Title: "🎶 Resumed playing:"
+      Description: "{song-name}"
+    Skip:
+      Title: ⏭️ Skipping song...
+    StoppedMusic:
+      Title: ⏹️ Music Stopped
+      Description: You stopped the music queue!
+    QueueOver:
+      Title: ⏹️ Stopping Music
+      Description: The music queue is now over
+    Join:
+      Title: ☎️ Joined voice channel
+    Leave:
+      Title: 👋 Leaving voice channel
+  CommandDescriptions:
+    play: Play a song in the voice channel you are in.
+    stop: Stop the bot from playing music.
+    queue: View the song queue
+    skip: Skip to a certain song in the queue
+    pause: Pause the current song
+    resume: Resume the current song
+    join: Have the bot join your voice channel
+RequiredRanks:
+  play: "@everyone"
+  stop: "@everyone"
+  queue: "@everyone"
+  skip: "@everyone"
+  pause: "@everyone"
+  resume: "@everyone"
+  join: "@everyone"

@@ -1,0 +1,47 @@
+Enabled: true
+Settings:
+  AdminPermission: Developer
+  # Permission role for -colors & -color command
+  MemberPermission: "@everyone"
+  # This is role of bot which is automatically made when bot joins
+  # Color roles will be created under this role
+  Bot_Role: "870501599750004768"
+  # Color Role : Role Name: Hex Color
+  Colors:
+    - Name: Announcement Ping
+      Hex: "#c57f8b"
+      Permission: "@everyone"
+    - Name: • Miscellaneous Ping
+      Hex: "#ff5858"
+      Permission: "@everyone"
+    - Name: • Chat revival
+      Hex: "#e67b41"
+      Permission: "@everyone"
+    - Name: Giveaway Ping
+      Hex: "#7fbff3"
+      Permission: "@everyone"
+Messages:
+  CreatingColors:
+    Title: Color Roles
+    Description: Creating Colors roles.. Please wait a while.
+  ColorsCreated:
+    Title: Color Roles
+    Description: |-
+      Color Roles created.
+
+      __Note__: If a color role already existed, it was skipped.
+  NoColors:
+    Title: Color Roles
+    Description: No color role was found use `-color-createdefault` to make default colors.
+  ColorList:
+    Title: Color Roles
+    Description: "{color-list}"
+  ColorAdded:
+    Title: Color Roles
+    Description: <@&{roleid}> color role was added to you.
+  Invalid:
+    Title: Color Roles
+    Description: Color isn't registred in config or doesn't exist.
+  Removed:
+    Title: Color Roles
+    Description: Every color role was removed if any
