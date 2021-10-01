@@ -30,7 +30,7 @@ module.exports = (message, extraInfo = "", predefinedLine, logToConsole = true) 
                 addonName = addonName.substring(addonName.lastIndexOf("\\") + 1, addonName.lastIndexOf("."));
 
                 if (logToConsole) console.log(chalk.hex("#ff5e5e").bold("[ERROR] ") + "An unexpected error has occured from the " + chalk.bold(addonName) + " addon. " + chalk.bold("Please contact the addon developer"));
-            } else if (logToConsole) console.log(chalk.hex("#ff5e5e").bold("[ERROR] ") + "An unexpected error has occured. Please contact the Codexbot support team. " + chalk.bold("https://discord.gg/dG2QmUehBA"))
+            } else if (logToConsole) console.log(chalk.hex("#ff5e5e").bold("[ERROR] ") + "An unexpected error has occured. Please contact the eFex bot support team. " + chalk.bold("https://discord.gg/dG2QmUehBA"))
         }
     }
 

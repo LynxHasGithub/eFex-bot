@@ -9,7 +9,7 @@ module.exports = async (bot) => {
     // GENERATE REPORT
     require('../modules/methods/generateReport')(bot);
 
-    const botStatus = await variables.db.get.getStatus() || { activity: 'Codexbot', type: 'Playing' };
+    const botStatus = await variables.db.get.getStatus() || { activity: 'eFex bot', type: 'Playing' };
     if (config.ActivityCycling.Enabled) {
         let pos = 0;
         async function nextStatus() {
@@ -30,13 +30,13 @@ module.exports = async (bot) => {
         nextStatus();
         setInterval(nextStatus, config.ActivityCycling.Time * 1000)
     } else setInterval(async () => {
-        const botStatus = await variables.db.get.getStatus() || { activity: 'Codexbot', type: 'Playing' };
+        const botStatus = await variables.db.get.getStatus() || { activity: 'eFex bot', type: 'Playing' };
         variables.db.update.status.setStatus(botStatus.type, botStatus.activity)
     }, 5000)
 
     console.log("\x1b[0m", `#---------------------------------------------------------------------------#`);
-    console.log('\x1b[32m', `                         Codexbot v${variables.config.BotVersion} is now ONLINE!`);
-    console.log("\x1b[36m", `                       Thank you for Usin Codexbot!`);
+    console.log('\x1b[32m', `                         eFex bot v${variables.config.BotVersion} is now ONLINE!`);
+    console.log("\x1b[36m", `                       Thank you for Usin eFex bot!`);
     console.log(' ');
     console.log(`${chalk.hex("#ffc042")(`              Have any issues? Join our Discord server for support!`)}`);
     console.log("\x1b[0m", `                          https://discord.gg/dG2QmUehBA`);

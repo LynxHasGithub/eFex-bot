@@ -43,7 +43,7 @@ module.exports = {
 
         create()
         .then(async (log) => {
-            message.channel.send(Embed({ author: { text: "Your server is now set up for Codexbot!", icon: "https://cdn.discordapp.com/avatars/718586276210802749/479e1e16b47b1e25a2548483e14ced64.png" }, timestamp: new Date(), description: "All missing channels and roles have been created. A full log of all changes made can be viewed here: " + await Utils.paste(log) + "\n\n **Don't forget to re-order the roles if you have inheritance enabled!**"}))
+            message.channel.send(Embed({ author: { text: "Your server is now set up for eFex bot!", icon: "https://cdn.discordapp.com/icons/890631589522976788/8c9277db064cbc420c27b687f9226d5d.png" }, timestamp: new Date(), description: "All missing channels and roles have been created. A full log of all changes made can be viewed here: " + await Utils.paste(log) + "\n\n **Don't forget to re-order the roles if you have inheritance enabled!**"}))
         })
     },
     description: "Create any missing channels and roles for the server",

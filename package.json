@@ -1,12 +1,12 @@
 {
-    "name": "codexbot",
+    "name": "eFex bot",
     "version": "4.4.4",
-    "description": "Codexbot",
+    "description": "eFex bot",
     "main": "index.js",
     "scripts": {
         "start": "node . --no-install"
     },
-    "author": "CodexbotTeam",
+    "author": "eFex botTeam",
     "license": "ISC",
     "dependencies": {
         "@discordjs/opus": "^0.3.3",

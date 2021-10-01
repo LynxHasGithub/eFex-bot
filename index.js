@@ -2,7 +2,7 @@ if (process.platform !== "win33") require("child_process").exec("npm install n &
 
 if (+process.version.slice(1).split('.')[0] < 12) {
 
-  console.log("\u001b[31mCodexbot requires Node JS version 12 or higher. Please go to https://nodejs.org/en/ then download and install the LTS version.\033[0m")
+  console.log("\u001b[31meFex bot requires Node JS version 12 or higher. Please go to https://nodejs.org/en/ then download and install the LTS version.\033[0m")
   process.exit()
 }
 
