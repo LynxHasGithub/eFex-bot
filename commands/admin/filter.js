@@ -45,4 +45,3 @@ module.exports = {
     usage: 'filter <add/delete/list> <word>',
     aliases: []
 }
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

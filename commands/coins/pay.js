@@ -35,4 +35,3 @@ module.exports = {
     usage: 'pay <@user> <amount>',
     aliases: []
 }
-// 239232   8501   2229706    63250   1613689679   H__%%   2229706

@@ -6,9 +6,9 @@ module.exports = {
   name: 'update',
   run: async (bot, message, args, { prefixUsed, commandUsed }) => {
     let questions = [
-      lang.AdminModule.Commands.Update.Questions[0], 
-      lang.AdminModule.Commands.Update.Questions[1], 
-      lang.AdminModule.Commands.Update.Questions[2], 
+      lang.AdminModule.Commands.Update.Questions[0],
+      lang.AdminModule.Commands.Update.Questions[1],
+      lang.AdminModule.Commands.Update.Questions[2],
       lang.AdminModule.Commands.Update.Questions[3]
     ]
     let answers = [];
@@ -83,4 +83,3 @@ module.exports = {
   usage: 'update <message>',
   aliases: []
 }
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

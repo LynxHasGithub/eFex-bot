@@ -8,7 +8,7 @@ module.exports = {
     run: async (bot, message, args, { prefixUsed, commandUsed }) => {
         if (args.length < 3) return message.channel.send(Embed({ preset: 'invalidargs', usage: module.exports.usage }));
         let content = message.content.replace(prefixUsed + commandUsed, '').replace(/(<@[0-9]{18}>|<@![0-9]{18}>|<@&[0-9]{18}>|users|tickets)\s+(normal|embed|)/g, '')
-        
+
         if (!["normal", "embed"].includes(args[1].toLowerCase())) return message.channel.send(Embed({ preset: 'invalidargs', usage: module.exports.usage }));
 
         async function send(channel, sendError = false) {
@@ -62,4 +62,3 @@ module.exports = {
     usage: 'msg <@user/@role/users/tickets> <normal/embed> <message>',
     aliases: ['message']
 }
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

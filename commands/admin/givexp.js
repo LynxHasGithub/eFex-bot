@@ -10,7 +10,7 @@ module.exports = {
 
         if (args.length < 1 || !amount || (!everyone && !user)) return message.channel.send(Embed({ preset: 'invalidargs', usage: module.exports.usage }));
         if (!everyone && user.user.bot) return message.channel.send(Embed({ preset: "error", description: lang.AdminModule.Commands.Givecoins.GiveToBot }));
-        
+
         if (everyone) {
             await message.guild.members.cache.array().filter(m => !m.user.bot).forEach(async member => {
                 await Utils.variables.db.update.experience.updateExperience(member, (await Utils.variables.db.get.getExperience(member)).level, amount, 'add')
@@ -26,7 +26,7 @@ module.exports = {
             })
         } else {
             await Utils.variables.db.update.experience.updateExperience(user, (await Utils.variables.db.get.getExperience(user)).level, amount, 'add')
-    
+
             let { level, xp } = await Utils.variables.db.get.getExperience(user)
             let xpNeeded = ~~((level * (175 * level) * 0.5)) - xp;
 
@@ -48,4 +48,3 @@ module.exports = {
     usage: "givexp <amount> <@user/all/everyone>",
     aliases: [ 'giveexp', 'giveexperience', 'addxp', 'addexp']
 }
-// _USER__%%   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

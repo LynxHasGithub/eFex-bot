@@ -12,7 +12,7 @@ module.exports = {
                 icon: message.member.user.displayAvatarURL({ dynamic: true }),
                 text: message.member.user.username
             },
-            title: lang.CoinModule.Commands.Coins.Embeds.YourCoins.Title, 
+            title: lang.CoinModule.Commands.Coins.Embeds.YourCoins.Title,
             description: lang.CoinModule.Commands.Coins.Embeds.YourCoins.Description.replace(/{coins}/g, (await Utils.variables.db.get.getCoins(message.member)).toLocaleString()) }));
         else {
             let user = Utils.ResolveUser(message);
@@ -24,7 +24,7 @@ module.exports = {
                     icon: user.user.displayAvatarURL({ dynamic: true }),
                     text: user.user.username
                 },
-                title: lang.CoinModule.Commands.Coins.Embeds.UserCoins.Title.replace(/{user}/g, user.user.username), 
+                title: lang.CoinModule.Commands.Coins.Embeds.UserCoins.Title.replace(/{user}/g, user.user.username),
                 description: lang.CoinModule.Commands.Coins.Embeds.UserCoins.Description.replace(/{user}/g, user).replace(/{coins}/g, coins >= 0 ? coins.toLocaleString() : 'unknown') }));
         }
     },
@@ -35,6 +35,3 @@ module.exports = {
         'balance'
     ]
 }
-
-
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

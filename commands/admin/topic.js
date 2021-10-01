@@ -23,4 +23,3 @@ module.exports = {
     usage: 'topic [#channel] (new topic)',
     aliases: ['settopic']
 }
-// 239232   8501   2229706    63250   1613689679   __%%   2229706

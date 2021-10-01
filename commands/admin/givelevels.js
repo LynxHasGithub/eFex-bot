@@ -39,4 +39,3 @@ module.exports = {
     usage: "givelevels <amount> <@user/all/everyone>",
     aliases: ['givelevel', 'addlevel', 'addlevels']
 }
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706

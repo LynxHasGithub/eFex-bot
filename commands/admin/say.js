@@ -14,7 +14,7 @@ module.exports = {
     let msg = message.content.slice((
       // Prefix + command length
       (prefixUsed + commandUsed).length +
-      // Action (embed or normal) length 
+      // Action (embed or normal) length
       action.length) + 1, message.content.length)
 
     // Remove channel if it is added
@@ -112,4 +112,3 @@ module.exports = {
   usage: 'say <normal/embed/advanced> <message/embed properties>',
   aliases: []
 }
-// 239232   8501   2229706    63250   1613689679   NULLED BY 0xEB   2229706
